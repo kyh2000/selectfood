@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.myapp.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_foodkind"
+            app:destination="@id/foodkind" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.myapp.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_rice2"
+            app:destination="@id/rice2" />
+        <action
+            android:id="@+id/action_SecondFragment_to_myeon2"
+            app:destination="@id/myeon2" />
+        <action
+            android:id="@+id/action_SecondFragment_to_meat2"
+            app:destination="@id/meat2" />
+    </fragment>
+    <fragment
+        android:id="@+id/rice2"
+        android:name="com.example.myapp.rice"
+        android:label="fragment_rice"
+        tools:layout="@layout/fragment_rice" >
+        <action
+            android:id="@+id/action_rice2_to_soup"
+            app:destination="@id/soup" />
+        <action
+            android:id="@+id/action_rice2_to_nosoup"
+            app:destination="@id/nosoup" />
+    </fragment>
+    <fragment
+        android:id="@+id/myeon2"
+        android:name="com.example.myapp.myeon"
+        android:label="fragment_myeon"
+        tools:layout="@layout/fragment_myeon" >
+        <action
+            android:id="@+id/action_myeon2_to_soup1"
+            app:destination="@id/soup1" />
+        <action
+            android:id="@+id/action_myeon2_to_nosoup1"
+            app:destination="@id/nosoup1" />
+    </fragment>
+    <fragment
+        android:id="@+id/meat2"
+        android:name="com.example.myapp.meat"
+        android:label="fragment_meat"
+        tools:layout="@layout/fragment_meat" >
+        <action
+            android:id="@+id/action_meat2_to_oily"
+            app:destination="@id/oily" />
+        <action
+            android:id="@+id/action_meat2_to_nooily"
+            app:destination="@id/nooily" />
+    </fragment>
+    <fragment
+        android:id="@+id/soup"
+        android:name="com.example.myapp.soup"
+        android:label="fragment_soup"
+        tools:layout="@layout/fragment_soup" >
+        <action
+            android:id="@+id/action_soup_to_result"
+            app:destination="@id/result" />
+        <action
+            android:id="@+id/action_soup_to_result1"
+            app:destination="@id/result1" />
+    </fragment>
+    <fragment
+        android:id="@+id/nosoup"
+        android:name="com.example.myapp.nosoup"
+        android:label="fragment_nosoup"
+        tools:layout="@layout/fragment_nosoup" >
+        <action
+            android:id="@+id/action_nosoup_to_result2"
+            app:destination="@id/result2" />
+        <action
+            android:id="@+id/action_nosoup_to_result3"
+            app:destination="@id/result3" />
+    </fragment>
+    <fragment
+        android:id="@+id/soup1"
+        android:name="com.example.myapp.soup1"
+        android:label="fragment_soup1"
+        tools:layout="@layout/fragment_soup1" >
+        <action
+            android:id="@+id/action_soup1_to_result4"
+            app:destination="@id/result4" />
+        <action
+            android:id="@+id/action_soup1_to_result5"
+            app:destination="@id/result5" />
+    </fragment>
+    <fragment
+        android:id="@+id/nosoup1"
+        android:name="com.example.myapp.nosoup1"
+        android:label="fragment_nosoup1"
+        tools:layout="@layout/fragment_nosoup1" >
+        <action
+            android:id="@+id/action_nosoup1_to_result6"
+            app:destination="@id/result6" />
+        <action
+            android:id="@+id/action_nosoup1_to_result7"
+            app:destination="@id/result7" />
+    </fragment>
+    <fragment
+        android:id="@+id/oily"
+        android:name="com.example.myapp.oily"
+        android:label="fragment_oily"
+        tools:layout="@layout/fragment_oily" >
+        <action
+            android:id="@+id/action_oily_to_result8"
+            app:destination="@id/result8" />
+        <action
+            android:id="@+id/action_oily_to_result9"
+            app:destination="@id/result9" />
+    </fragment>
+    <fragment
+        android:id="@+id/nooily"
+        android:name="com.example.myapp.nooily"
+        android:label="fragment_nooily"
+        tools:layout="@layout/fragment_nooily" >
+        <action
+            android:id="@+id/action_nooily_to_result10"
+            app:destination="@id/result10" />
+        <action
+            android:id="@+id/action_nooily_to_result11"
+            app:destination="@id/result11" />
+    </fragment>
+    <fragment
+        android:id="@+id/result"
+        android:name="com.example.myapp.result"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_result_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result1"
+        android:name="com.example.myapp.result1"
+        android:label="fragment_result1"
+        tools:layout="@layout/fragment_result1" >
+        <action
+            android:id="@+id/action_result1_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result2"
+        android:name="com.example.myapp.result2"
+        android:label="fragment_result2"
+        tools:layout="@layout/fragment_result2" >
+        <action
+            android:id="@+id/action_result2_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result3"
+        android:name="com.example.myapp.result3"
+        android:label="fragment_result3"
+        tools:layout="@layout/fragment_result3" >
+        <action
+            android:id="@+id/action_result3_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result4"
+        android:name="com.example.myapp.result4"
+        android:label="fragment_result4"
+        tools:layout="@layout/fragment_result4" >
+        <action
+            android:id="@+id/action_result4_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result5"
+        android:name="com.example.myapp.result5"
+        android:label="fragment_result5"
+        tools:layout="@layout/fragment_result5" >
+        <action
+            android:id="@+id/action_result5_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result6"
+        android:name="com.example.myapp.result6"
+        android:label="fragment_result6"
+        tools:layout="@layout/fragment_result6" >
+        <action
+            android:id="@+id/action_result6_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result7"
+        android:name="com.example.myapp.result7"
+        android:label="fragment_result7"
+        tools:layout="@layout/fragment_result7" >
+        <action
+            android:id="@+id/action_result7_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result8"
+        android:name="com.example.myapp.result8"
+        android:label="fragment_result8"
+        tools:layout="@layout/fragment_result8" >
+        <action
+            android:id="@+id/action_result8_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result9"
+        android:name="com.example.myapp.result9"
+        android:label="fragment_result9"
+        tools:layout="@layout/fragment_result9" >
+        <action
+            android:id="@+id/action_result9_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result10"
+        android:name="com.example.myapp.result10"
+        android:label="fragment_result10"
+        tools:layout="@layout/fragment_result10" >
+        <action
+            android:id="@+id/action_result10_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result11"
+        android:name="com.example.myapp.result11"
+        android:label="fragment_result11"
+        tools:layout="@layout/fragment_result11" >
+        <action
+            android:id="@+id/action_result11_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodkind"
+        android:name="com.example.myapp.foodkind"
+        android:label="fragment_foodkind"
+        tools:layout="@layout/fragment_foodkind" >
+        <action
+            android:id="@+id/action_foodkind_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_foodkind_to_secondFragment2"
+            app:destination="@id/secondFragment2" />
+        <action
+            android:id="@+id/action_foodkind_to_secondFragment3"
+            app:destination="@id/secondFragment3" />
+        <action
+            android:id="@+id/action_foodkind_to_secondFragment4"
+            app:destination="@id/secondFragment42" />
+        <action
+            android:id="@+id/action_foodkind_to_secondFragment5"
+            app:destination="@id/secondFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment2"
+        android:name="com.example.myapp.SecondFragment2"
+        android:label="fragment_second2"
+        tools:layout="@layout/fragment_second2" >
+        <action
+            android:id="@+id/action_secondFragment22_to_rice22"
+            app:destination="@id/rice22" />
+        <action
+            android:id="@+id/action_secondFragment22_to_myeon22"
+            app:destination="@id/myeon22" />
+        <action
+            android:id="@+id/action_secondFragment22_to_meat22"
+            app:destination="@id/meat22" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment3"
+        android:name="com.example.myapp.SecondFragment3"
+        android:label="fragment_second3"
+        tools:layout="@layout/fragment_second3" >
+        <action
+            android:id="@+id/action_secondFragment3_to_rice32"
+            app:destination="@id/rice32" />
+        <action
+            android:id="@+id/action_secondFragment3_to_meat3"
+            app:destination="@id/meat3" />
+        <action
+            android:id="@+id/action_secondFragment3_to_myeon3"
+            app:destination="@id/myeon3" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment42"
+        android:name="com.example.myapp.SecondFragment4"
+        android:label="fragment_second4"
+        tools:layout="@layout/fragment_second4" >
+        <action
+            android:id="@+id/action_secondFragment42_to_rice4"
+            app:destination="@id/rice4" />
+        <action
+            android:id="@+id/action_secondFragment42_to_meat4"
+            app:destination="@id/meat4" />
+        <action
+            android:id="@+id/action_secondFragment42_to_myeon4"
+            app:destination="@id/myeon4" />
+    </fragment>
+    <fragment
+        android:id="@+id/rice22"
+        android:name="com.example.myapp.rice2"
+        android:label="fragment_rice2"
+        tools:layout="@layout/fragment_rice2" >
+        <action
+            android:id="@+id/action_rice22_to_result12"
+            app:destination="@id/result12" />
+        <action
+            android:id="@+id/action_rice22_to_result13"
+            app:destination="@id/result13" />
+    </fragment>
+    <fragment
+        android:id="@+id/rice32"
+        android:name="com.example.myapp.rice3"
+        android:label="fragment_rice3"
+        tools:layout="@layout/fragment_rice3" >
+        <action
+            android:id="@+id/action_rice32_to_result19"
+            app:destination="@id/result19" />
+        <action
+            android:id="@+id/action_rice32_to_nosoup3"
+            app:destination="@id/nosoup3" />
+    </fragment>
+    <fragment
+        android:id="@+id/rice4"
+        android:name="com.example.myapp.rice4"
+        android:label="fragment_rice4"
+        tools:layout="@layout/fragment_rice4" >
+        <action
+            android:id="@+id/action_rice4_to_result28"
+            app:destination="@id/result28" />
+        <action
+            android:id="@+id/action_rice4_to_result29"
+            app:destination="@id/result29" />
+    </fragment>
+    <fragment
+        android:id="@+id/myeon22"
+        android:name="com.example.myapp.myeon2"
+        android:label="fragment_myeon2"
+        tools:layout="@layout/fragment_myeon2" >
+        <action
+            android:id="@+id/action_myeon22_to_result14"
+            app:destination="@id/result14" />
+        <action
+            android:id="@+id/action_myeon22_to_result15"
+            app:destination="@id/result15" />
+    </fragment>
+    <fragment
+        android:id="@+id/myeon4"
+        android:name="com.example.myapp.myeon4"
+        android:label="fragment_myeon4"
+        tools:layout="@layout/fragment_myeon4" >
+        <action
+            android:id="@+id/action_myeon4_to_soup5"
+            app:destination="@id/soup5" />
+        <action
+            android:id="@+id/action_myeon4_to_nosoup5"
+            app:destination="@id/nosoup5" />
+    </fragment>
+    <fragment
+        android:id="@+id/meat22"
+        android:name="com.example.myapp.meat2"
+        android:label="fragment_meat2"
+        tools:layout="@layout/fragment_meat2" >
+        <action
+            android:id="@+id/action_meat22_to_result17"
+            app:destination="@id/result17" />
+        <action
+            android:id="@+id/action_meat22_to_result18"
+            app:destination="@id/result18" />
+    </fragment>
+    <fragment
+        android:id="@+id/meat3"
+        android:name="com.example.myapp.meat3"
+        android:label="fragment_meat3"
+        tools:layout="@layout/fragment_meat3" >
+        <action
+            android:id="@+id/action_meat3_to_result23"
+            app:destination="@id/result26" />
+        <action
+            android:id="@+id/action_meat3_to_result277"
+            app:destination="@id/result277" />
+    </fragment>
+    <fragment
+        android:id="@+id/meat4"
+        android:name="com.example.myapp.meat4"
+        android:label="fragment_meat4"
+        tools:layout="@layout/fragment_meat4" >
+        <action
+            android:id="@+id/action_meat4_to_oily3"
+            app:destination="@id/oily3" />
+        <action
+            android:id="@+id/action_meat4_to_nooily3"
+            app:destination="@id/nooily3" />
+    </fragment>
+    <fragment
+        android:id="@+id/result12"
+        android:name="com.example.myapp.result12"
+        android:label="fragment_result12"
+        tools:layout="@layout/fragment_result12" >
+        <action
+            android:id="@+id/action_result12_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result13"
+        android:name="com.example.myapp.result13"
+        android:label="fragment_result13"
+        tools:layout="@layout/fragment_result13" >
+        <action
+            android:id="@+id/action_result13_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result14"
+        android:name="com.example.myapp.result14"
+        android:label="fragment_result14"
+        tools:layout="@layout/fragment_result14" >
+        <action
+            android:id="@+id/action_result14_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result15"
+        android:name="com.example.myapp.result15"
+        android:label="fragment_result15"
+        tools:layout="@layout/fragment_result15" >
+        <action
+            android:id="@+id/action_result15_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result17"
+        android:name="com.example.myapp.result17"
+        android:label="fragment_result17"
+        tools:layout="@layout/fragment_result17" >
+        <action
+            android:id="@+id/action_result17_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result18"
+        android:name="com.example.myapp.result18"
+        android:label="fragment_result18"
+        tools:layout="@layout/fragment_result18" >
+        <action
+            android:id="@+id/action_result18_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result23"
+        android:name="com.example.myapp.result23"
+        android:label="fragment_result22"
+        tools:layout="@layout/fragment_result23">
+        <action
+            android:id="@+id/action_result23_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result22"
+        android:name="com.example.myapp.result22"
+        android:label="fragment_result22"
+        tools:layout="@layout/fragment_result22">
+        <action
+            android:id="@+id/action_result22_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result26"
+        android:name="com.example.myapp.result26"
+        android:label="fragment_result26"
+        tools:layout="@layout/fragment_result26">
+        <action
+            android:id="@+id/action_result26_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result19"
+        android:name="com.example.myapp.result19"
+        android:label="fragment_result19"
+        tools:layout="@layout/fragment_result19" >
+        <action
+            android:id="@+id/action_result19_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nosoup3"
+        android:name="com.example.myapp.nosoup4"
+        android:label="fragment_nosoup4"
+        tools:layout="@layout/fragment_nosoup4">
+        <action
+            android:id="@+id/action_nosoup3_to_result20"
+            app:destination="@id/result20" />
+        <action
+            android:id="@+id/action_nosoup3_to_result211"
+            app:destination="@id/result211" />
+    </fragment>
+    <fragment
+        android:id="@+id/result20"
+        android:name="com.example.myapp.result20"
+        android:label="fragment_result20"
+        tools:layout="@layout/fragment_result20" >
+        <action
+            android:id="@+id/action_result20_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result211"
+        android:name="com.example.myapp.result211"
+        android:label="fragment_result211"
+        tools:layout="@layout/fragment_result211" >
+        <action
+            android:id="@+id/action_result211_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/soup3"
+        android:name="com.example.myapp.soup3"
+        android:label="fragment_soup3"
+        tools:layout="@layout/fragment_soup3" >
+        <action
+            android:id="@+id/action_soup3_to_result23"
+            app:destination="@id/result23" />
+        <action
+            android:id="@+id/action_soup3_to_result21"
+            app:destination="@id/result22" />
+    </fragment>
+    <fragment
+        android:id="@+id/nosoup33"
+        android:name="com.example.myapp.nosoup33"
+        android:label="fragment_nosoup33"
+        tools:layout="@layout/fragment_nosoup33" >
+        <action
+            android:id="@+id/action_nosoup33_to_result25"
+            app:destination="@id/result25" />
+        <action
+            android:id="@+id/action_nosoup33_to_result38"
+            app:destination="@id/result38" />
+    </fragment>
+    <fragment
+        android:id="@+id/result25"
+        android:name="com.example.myapp.result25"
+        android:label="fragment_result25"
+        tools:layout="@layout/fragment_result25" >
+        <action
+            android:id="@+id/action_result25_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result28"
+        android:name="com.example.myapp.result28"
+        android:label="fragment_result28"
+        tools:layout="@layout/fragment_result28" >
+        <action
+            android:id="@+id/action_result28_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result29"
+        android:name="com.example.myapp.result29"
+        android:label="fragment_result29"
+        tools:layout="@layout/fragment_result29" >
+        <action
+            android:id="@+id/action_result29_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/soup5"
+        android:name="com.example.myapp.soup5"
+        android:label="fragment_soup5"
+        tools:layout="@layout/fragment_soup5" >
+        <action
+            android:id="@+id/action_soup5_to_result30"
+            app:destination="@id/result30" />
+        <action
+            android:id="@+id/action_soup5_to_result31"
+            app:destination="@id/result31" />
+    </fragment>
+    <fragment
+        android:id="@+id/nosoup5"
+        android:name="com.example.myapp.nosoup5"
+        android:label="fragment_nosoup5"
+        tools:layout="@layout/fragment_nosoup5" >
+        <action
+            android:id="@+id/action_nosoup5_to_result32"
+            app:destination="@id/result32" />
+        <action
+            android:id="@+id/action_nosoup5_to_result33"
+            app:destination="@id/result33" />
+    </fragment>
+    <fragment
+        android:id="@+id/result30"
+        android:name="com.example.myapp.result30"
+        android:label="fragment_result30"
+        tools:layout="@layout/fragment_result30" >
+        <action
+            android:id="@+id/action_result30_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result31"
+        android:name="com.example.myapp.result31"
+        android:label="fragment_result31"
+        tools:layout="@layout/fragment_result31" >
+        <action
+            android:id="@+id/action_result31_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result32"
+        android:name="com.example.myapp.result32"
+        android:label="fragment_result32"
+        tools:layout="@layout/fragment_result32" >
+        <action
+            android:id="@+id/action_result32_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result33"
+        android:name="com.example.myapp.result33"
+        android:label="fragment_result33"
+        tools:layout="@layout/fragment_result33" >
+        <action
+            android:id="@+id/action_result33_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oily3"
+        android:name="com.example.myapp.oily3"
+        android:label="fragment_oily3"
+        tools:layout="@layout/fragment_oily3" >
+        <action
+            android:id="@+id/action_oily3_to_result34"
+            app:destination="@id/result34" />
+        <action
+            android:id="@+id/action_oily3_to_result35"
+            app:destination="@id/result35" />
+    </fragment>
+    <fragment
+        android:id="@+id/nooily3"
+        android:name="com.example.myapp.nooily3"
+        android:label="fragment_nooily3"
+        tools:layout="@layout/fragment_nooily3" >
+        <action
+            android:id="@+id/action_nooily3_to_result36"
+            app:destination="@id/result36" />
+        <action
+            android:id="@+id/action_nooily3_to_result37"
+            app:destination="@id/result37" />
+    </fragment>
+    <fragment
+        android:id="@+id/result34"
+        android:name="com.example.myapp.result34"
+        android:label="fragment_result34"
+        tools:layout="@layout/fragment_result34" >
+        <action
+            android:id="@+id/action_result34_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result35"
+        android:name="com.example.myapp.result35"
+        android:label="fragment_result35"
+        tools:layout="@layout/fragment_result35" >
+        <action
+            android:id="@+id/action_result35_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result36"
+        android:name="com.example.myapp.result36"
+        android:label="fragment_result36"
+        tools:layout="@layout/fragment_result36" >
+        <action
+            android:id="@+id/action_result36_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result37"
+        android:name="com.example.myapp.result37"
+        android:label="fragment_result37"
+        tools:layout="@layout/fragment_result37" >
+        <action
+            android:id="@+id/action_result37_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myeon3"
+        android:name="com.example.myapp.myeon3"
+        android:label="fragment_myeon3"
+        tools:layout="@layout/fragment_myeon3" >
+        <action
+            android:id="@+id/action_myeon3_to_soup3"
+            app:destination="@id/soup3" />
+        <action
+            android:id="@+id/action_myeon3_to_nosoup33"
+            app:destination="@id/nosoup33" />
+    </fragment>
+    <fragment
+        android:id="@+id/result277"
+        android:name="com.example.myapp.result277"
+        android:label="fragment_result277"
+        tools:layout="@layout/fragment_result277" >
+        <action
+            android:id="@+id/action_result277_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result38"
+        android:name="com.example.myapp.result38"
+        android:label="fragment_result38"
+        tools:layout="@layout/fragment_result38" >
+        <action
+            android:id="@+id/action_result38_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment5"
+        android:name="com.example.myapp.SecondFragment5"
+        android:label="fragment_second5"
+        tools:layout="@layout/fragment_second5" >
+        <action
+            android:id="@+id/action_secondFragment5_to_oil"
+            app:destination="@id/oil" />
+        <action
+            android:id="@+id/action_secondFragment5_to_hot"
+            app:destination="@id/hot" />
+    </fragment>
+    <fragment
+        android:id="@+id/oil"
+        android:name="com.example.myapp.oil"
+        android:label="fragment_oil"
+        tools:layout="@layout/fragment_oil" >
+        <action
+            android:id="@+id/action_oil_to_result39"
+            app:destination="@id/result39" />
+        <action
+            android:id="@+id/action_oil_to_result40"
+            app:destination="@id/result40" />
+    </fragment>
+    <fragment
+        android:id="@+id/hot"
+        android:name="com.example.myapp.hot"
+        android:label="fragment_hot"
+        tools:layout="@layout/fragment_hot" >
+        <action
+            android:id="@+id/action_hot_to_result412"
+            app:destination="@id/result41" />
+        <action
+            android:id="@+id/action_hot_to_result42"
+            app:destination="@id/result42" />
+    </fragment>
+    <fragment
+        android:id="@+id/result39"
+        android:name="com.example.myapp.result39"
+        android:label="fragment_result39"
+        tools:layout="@layout/fragment_result39" >
+        <action
+            android:id="@+id/action_result39_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result40"
+        android:name="com.example.myapp.result40"
+        android:label="fragment_result40"
+        tools:layout="@layout/fragment_result40" >
+        <action
+            android:id="@+id/action_result40_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result41"
+        android:name="com.example.myapp.result41"
+        android:label="fragment_result41"
+        tools:layout="@layout/fragment_result41" >
+        <action
+            android:id="@+id/action_result41_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/result42"
+        android:name="com.example.myapp.result42"
+        android:label="fragment_result42"
+        tools:layout="@layout/fragment_result42" >
+        <action
+            android:id="@+id/action_result42_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

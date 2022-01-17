@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout22"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".foodkind">
+
+    <Button
+        android:id="@+id/korean"
+        android:layout_width="88dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="260dp"
+        android:text="한식"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/usa"
+        android:layout_width="88dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="260dp"
+        android:text="양식"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/japanese"
+        android:layout_width="88dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="168dp"
+        android:text="일식"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/chinese"
+        android:layout_width="88dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="168dp"
+        android:text="중식"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bread"
+        android:layout_width="88dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="84dp"
+        android:text="빵/떡"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        android:text="어떤 종류의 음식을 원하시나요?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
